@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+  font-family: 'Press Start 2P', monospace;
+  background-color: #a751ee7e;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+.container {
+  background-color: #7df8f0c2;
+  padding: 25px;
+  border: 4px solid #80aef7;
+  border-radius: 0;
+  width: 480px;
+  box-shadow: 0 0 15px #bcccfe;
+  border-radius: 15px;
+}
+
+h1 {
+  text-align: center;
+  color: #9825fd;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+input[type="text"], input[type="date"] {
+  font-family: 'Press Start 2P', monospace;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #bdb2ff;
+  background-color: #fef6ff;
+  color: #4c4c4c;
+  font-size: 10px;
+  border-radius: 15px;
+}
+
+button {
+  font-family: 'Press Start 2P', monospace;
+  padding: 8px 10px;
+  margin: 4px;
+  border: 2px solid;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 10px;
+  transition: 0.2s;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.add-btn {
+  border-color: #80ed99;
+  background-color: #d0f4de;
+  color: #006d77;
+  width: 100%;
+}
+
+.edit-btn {
+  border-color: #ffadad;
+  background-color: #ffd6d6;
+  color: #b23a48;
+}
+
+.delete-btn {
+  border-color: #ffafcc;
+  background-color: #fff0f6;
+  color: #d62839;
+}
+
+.complete-btn {
+  border-color: #a0c4ff;
+  background-color: #e0f1ff;
+  color: #0353a4;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  background: #fffdfd;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 2px solid #cdb4db;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+}
+
+.task-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-text {
+  font-size: 10px;
+  color: #4c4c4c;
+}
+
+.task-date {
+  font-size: 9px;
+  color: #888;
+  margin-top: 6px;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(100, 100, 100, 0.4);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  border-radius: 15px;
+}
+
+.modal-content {
+  background: #ef6ca0;
+  padding: 25px;
+  border: 3px solid #cdb4db;
+  width: 320px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 8px;
+  margin: 12px 0;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 10px;
+  background-color: #fef6ff;
+  color: #333;
+  border: 2px solid #bdb2ff;
+  border-radius: 15px;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.save-btn {
+  background-color: #caffbf;
+  color: #006400;
+  border: 2px solid #9ef01a;
+  border-radius: 15px;
+}
+
+.cancel-btn {
+  background-color: #bdb2ff;
+  color: #3c096c;
+  border: 2px solid #9d4edd;
+  border-radius: 15px;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 20px;
+  }
+
+  .container {
+    width: 100%;
+    padding: 20px;
+    box-shadow: none;
+    border-width: 2px;
+  }
+
+  h1 {
+    font-size: 12px;
+  }
+
+  input[type="text"], input[type="date"], button {
+    font-size: 8px;
+    padding: 8px;
+  }
+
+  .modal-content {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .modal-content input {
+    font-size: 8px;
+    padding: 6px;
+  }
+
+  .task-text {
+    font-size: 8px;
+  }
+
+  .task-date {
+    font-size: 7px;
+  }
+
+  button {
+    margin: 2px;
+  }
+
+  .modal-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
